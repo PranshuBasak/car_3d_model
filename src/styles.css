@@ -1,5 +1,8 @@
 @import url('https://rsms.me/inter/inter.css');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   box-sizing: border-box;
 }
@@ -20,19 +23,7 @@ body {
   font-family: 'Inter';
 }
 
-a {
-  color: black;
-}
 
-a {
-  pointer-events: all;
-  color: white;
-  text-decoration: none;
-}
-
-svg {
-  fill: white;
-}
 
 @keyframes fade-in {
   from {
