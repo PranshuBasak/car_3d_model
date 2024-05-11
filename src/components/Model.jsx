@@ -63,7 +63,7 @@ export function Model() {
     <>
         <section className='w-full h-screen relative'>
           
-        <div className={` "flex" : "hidden" absolute bottom-0 left-0 w-12 md:w-22 h-12 md:h-22 justify-center items-center z-20 p-2 cursor-pointer`} onClick={() => setisplaying(!isplaying)}>
+        <div className={` "flex" : "hidden" absolute bottom-16 md:bottom-0 left-0 w-12 h-12 justify-center items-center z-20 p-2 cursor-pointer`} onClick={() => setisplaying(!isplaying)}>
           {
             !isplaying? 
             <img src={start} alt="start" />:
