@@ -6,6 +6,7 @@ import { PerformanceMonitor, AccumulativeShadows, RandomizedLight, Environment }
 import { Loader } from './Loader';
 import { Lightformers, Porsche } from './PorcheModel';
 import Links from './Links';
+import { Navbar } from './Navbar';
 
 
 
@@ -44,16 +45,16 @@ export function Model() {
   return (
     <>
         <section className='w-full h-screen relative'>
-        <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-          
+        <div className="absolute top-0 left-0 z-10 flex items-center justify-center">
+          <Navbar />
         </div>
-      <Canvas shadows camera={{ position: [-2, 3, 15], fov: fov }} className='bg-black' >
+      <Canvas shadows camera={{ position: [-2, 3, 15], fov: fov }} className='bg-black absolute z-0' >
           <spotLight position={[0, 15, 0]} angle={0.3} penumbra={1} castShadow intensity={2} shadow-bias={-0.0001} />
           <ambientLight intensity={0.5} />
           <Suspense  fallback={<Loader />}>
 
             <Links  pos={[0, 2.5, -2]} comment="About"/>
-            <Links  pos={[1.5, 1, -2.5]} comment="Travel"/>
+            {/* <Links  pos={[1.5, 1, -2.5]} comment="Travel"/> */}
             <Links  pos={[-2, 2.5, 1]} comment="Project"/>
             <Links  pos={[-2.7, 1.5, 2]} comment="Experience"/>
             <Porsche scale={1.6} position={[-0.5, -0.18, 0]} rotation={[0, Math.PI / 5, 0]} />
