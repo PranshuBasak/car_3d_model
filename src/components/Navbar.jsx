@@ -21,17 +21,17 @@ export const Navbar = () => {
         </div>
         <div className={`${open? null : "hidden" } w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
           <ul className="flex flex-col p-4 mt-4 font-medium md:space-x-8 md:flex-row md:mt-0 md:px-10">
-            {/* <li>
-              <a href="#" className="block py-2 px-3 text-blue-500 rounded md:p-0" aria-current="page">Travel</a>
-            </li> */}
             <li>
-              <a href="#" className="block py-2 px-3 text-white hover:text-blue-500 md:p-0">About</a>
+              <a href="https://ritikudawant.vercel.app/#home" className="block py-2 px-3 text-indigo-300 rounded md:p-0" aria-current="page">Home</a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-white hover:text-blue-500 md:p-0">Projects</a>
+              <a href="https://ritikudawant.vercel.app/#about" className="block py-2 px-3 text-white hover:text-indigo-300 md:p-0">About</a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-white hover:text-blue-500 md:p-0">Experience</a>
+              <a href="https://ritikudawant.vercel.app/#projects" className="block py-2 px-3 text-white hover:text-indigo-300 md:p-0">Projects</a>
+            </li>
+            <li>
+              <a href="https://ritikudawant.vercel.app/#experience" className="block py-2 px-3 text-white hover:text-indigo-300 md:p-0">Experience</a>
             </li>
           </ul>
         </div>

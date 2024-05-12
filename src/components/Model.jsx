@@ -78,10 +78,10 @@ export function Model() {
           <ambientLight intensity={0.5} />
           <Suspense  fallback={<Loader />}>
 
-            <Links  pos={[0, 2.5, -2]} comment="About"/>
-            {/* <Links  pos={[1.5, 1, -2.5]} comment="Travel"/> */}
-            <Links  pos={[-2, 2.5, 1]} comment="Project"/>
-            <Links  pos={[-2.7, 1.5, 2]} comment="Experience"/>
+            <Links  pos={[0, 2.5, -2]} comment="About" link="https://ritikudawant.vercel.app/#about"/>
+            <Links  pos={[1.5, 1, -2.5]} comment="Home" link="https://ritikudawant.vercel.app/#home"/>
+            <Links  pos={[-2, 2.5, 1]} comment="Project" link="https://ritikudawant.vercel.app/#projects"/>
+            <Links  pos={[-2.7, 1.5, 2]} comment="Experience" link="https://ritikudawant.vercel.app/#experience"/>
             <Porsche scale={1.6} position={[-0.5, -0.18, 0]} rotation={[0, Math.PI / 5, 0]}/>
             <AccumulativeShadows position={[0, -1.16, 0]} frames={100} alphaTest={0.9} scale={10}>
               <RandomizedLight amount={8} radius={10} ambient={0.5} position={[1, 5, -1]} />
